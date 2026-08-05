@@ -24,3 +24,8 @@ function testerAge() {
 function lancerMission(texte) {
     document.getElementById("mission").innerHTML = texte;
 }
+function allerContact() {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+}
