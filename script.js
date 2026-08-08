@@ -29,3 +29,19 @@ function allerContact() {
         behavior: "smooth"
     });
 }
+function afficherDomaine(domaine) {
+
+    let message = document.getElementById("domaine-message");
+
+    if (domaine === "pentest") {
+        message.textContent = "🛡️ Mission Pentest : tu vas apprendre à tester la sécurité d'un système.";
+    }
+
+    if (domaine === "analyse") {
+        message.textContent = "🔍 Mission Analyse : tu vas apprendre à détecter les risques et les failles.";
+    }
+
+    if (domaine === "developpement") {
+        message.textContent = "💻 Mission Développement : tu vas apprendre à créer des outils et applications.";
+    }
+}
