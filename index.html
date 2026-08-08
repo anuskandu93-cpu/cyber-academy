@@ -111,21 +111,21 @@
 
 <h2 id="contact">📩 Contact</h2>
 
-<form>
+<form action="https://formspree.io/f/mrpzeywd" method="POST">
 
-    <input type="text" placeholder="Votre nom">
-
-    <br><br>
-
-    <input type="email" placeholder="Votre email">
+    <input type="text" name="nom" placeholder="Votre nom" required>
 
     <br><br>
 
-    <textarea placeholder="Votre message"></textarea>
+    <input type="email" name="email" placeholder="Votre email" required>
 
     <br><br>
 
-    <button>Envoyer</button>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+
+    <br><br>
+
+    <button type="submit">📩 Envoyer</button>
 
 </form>
 
