@@ -12,22 +12,34 @@ function testerAge() {
 
     let age = prompt("Quel âge as-tu ?");
 
-    if (age >= 16) {
+    if (age > 16) {
         document.getElementById("resultat").innerHTML =
         "✅ Accès autorisé à la Cyber Academy !";
+
+        window.ageAutorise = true;
+
     } else {
         document.getElementById("resultat").innerHTML =
-        "❌ Désolé, il faut avoir au moins 16 ans.";
-    }
+        "❌ Désolé, il faut avoir plus de 16 ans.";
 
+        window.ageAutorise = false;
+    }
 }
 function lancerMission(texte) {
     document.getElementById("mission").innerHTML = texte;
 }
 function allerContact() {
-    document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
-    });
+
+    if (window.ageAutorise === true) {
+
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    } else {
+
+        alert("❌ Il faut avoir plus de 16 ans pour accéder au Contact.");
+    }
 }
 function afficherDomaine(domaine) {
 
