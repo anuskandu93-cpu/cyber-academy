@@ -57,3 +57,27 @@ function afficherDomaine(domaine) {
         message.textContent = "💻 Mission Développement : tu vas apprendre à créer des outils et applications.";
     }
 }
+function afficherFormation(formation) {
+
+    let message = document.getElementById("formation-message");
+
+    if (formation === "html") {
+        message.textContent =
+        "🌐 Formation HTML : tu vas apprendre à créer et structurer des pages web.";
+    }
+
+    if (formation === "css") {
+        message.textContent =
+        "🎨 Formation CSS : tu vas apprendre à créer le design de ton site.";
+    }
+
+    if (formation === "javascript") {
+        message.textContent =
+        "⚡ Formation JavaScript : tu vas apprendre à rendre ton site interactif.";
+    }
+
+    if (formation === "cyber") {
+        message.textContent =
+        "🛡️ Formation Cybersécurité : tu vas découvrir les bases de la sécurité informatique.";
+    }
+}
